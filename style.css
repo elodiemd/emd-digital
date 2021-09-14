@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-between;
+}
+
+.navbar img {
+  width: 300px;
+  position: center;
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: inline;
+  justify-content: space-around;
+}
+
+
+.menu li {
+  display: flex;
+  flex-direction: inline;
+  justify-content: center;
+  text-decoration: none;
+  margin-right: 40px;
+  text-transform: uppercase;
+
+}
+
+.menu ul {
+  justify-content: center;
+
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: #172601;
+}
+
+.service h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 20px;
+  color: #172601;
+}
+
+h4 {
+  color: #172601;
+  font-size: 17px;
+
+}
+
+#green {
+  background-color: green;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  background-image: linear-gradient(rgba(36, 70, 4, 0.4) 50%,rgba(238, 185, 10, 0.3) 80%), url("https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2800&q=80");
+}
+
+.banner h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 80px;
+  font-weight: bold;
+
+}
+
+.highlight {
+  background-color: #f2bf27ad;
+}
+
+
+.banner h2 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 30px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  margin-bottom: 15px;
+
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .9;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn {
+  line-height: 30px;
+	height: 35px;
+	text-align: center;
+	width: 200px;
+	cursor: pointer;
+  align-content: center;
+}
+.btn-one {
+  color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+  border-radius: 25px;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+	position: absolute;
+  font-weight: bolder;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 3;
+	transition: all 0.3s;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(230, 190, 11, 0.5);
+	border-bottom-color: rgba(230, 190, 11, 0.5);
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+.btn-one:hover::before {
+  opacity: 1;
+	transform: scale(1, 1);
+}
+.btn-one::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(1, 58, 4, 0.651);
+}
+.btn-one:hover::after {
+  opacity: 0;
+	transform: scale(0.1, 1);
+  font-weight: bolder;
+}
+
+
+
+.about h1 {
+  padding: 30px 0 8px;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.about h1::before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  left: 28%;
+  bottom: 5px;
+  width: 200px;
+  height: 20px;
+  transform: skew(-2deg) translateX(100%);
+  background: #f2bf27ad;
+  z-index: -1;
+}
+
+.footer {
+  background-color: #f2bf27ad;;
+  color: black;
+  list-style: none;
+  padding: 20px 20px 20px 20px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.footer h3 {
+  color: black;
+}
+
+.footer p {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
