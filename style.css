@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
 
 
-
-
-
-
-
-
+/* BODY STYLE */
 
 .navbar {
   display: flex;
@@ -36,7 +32,12 @@
   text-decoration: none;
   margin-right: 40px;
   text-transform: uppercase;
+  font-weight: lighter;
 
+}
+
+.menu ul:hover {
+ font-weight: 500;
 }
 
 .menu ul {
@@ -58,24 +59,13 @@ h3 {
   color: #172601;
 }
 
-.service h2 {
-  font-family: 'Roboto', sans-serif;
-  text-transform: capitalize;
-  font-weight: lighter;
-  text-align: center;
-  font-size: 20px;
-  color: #172601;
-}
-
 h4 {
   color: #172601;
   font-size: 17px;
 
 }
 
-#green {
-  background-color: green;
-}
+/* SECTION BANNER */
 
 .banner {
   background-size: cover;
@@ -93,6 +83,21 @@ h4 {
   font-weight: bold;
 
 }
+
+.service h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 20px;
+  color: #172601;
+}
+
+
+#green {
+  background-color: green;
+}
+
 
 .highlight {
   background-color: #f2bf27ad;
@@ -117,6 +122,46 @@ h4 {
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
+
+/* SECTIONS */
+
+.founder {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.description {
+  width: 80%;
+  font-weight: lighter;
+  margin-left: 70px;
+  align-items: center;
+}
+
+.signature {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 25px;
+}
+
+.photo-emd {
+  display: flex;
+  justify-content: left;
+}
+
+.photo-emd img {
+  width: 400px;
+}
+
+.hashtag {
+font-size: 30px;
+font-weight: lighter;
+color: white;
+
+}
+
+/* BUTTONS */
 
 .box-1 {
   display: flex;
