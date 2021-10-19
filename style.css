@@ -57,7 +57,7 @@
 }
 
 .menu a:hover {
-  color: black;
+  color: #f2bf27;
   text-decoration: none;
 }
 
@@ -190,7 +190,7 @@ p a:hover {
 /* SECTIONS */
 
 
-#test {
+#strategy {
 
 /* display: block;
     height: auto;
@@ -207,12 +207,68 @@ p a:hover {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    border: 2px solid #000;
+    border: 0.5px solid #000;
     border-radius: 40px;
-    background-color: #d8ffb6;
+    background-color: #f2bf27;
     text-align: left;
     cursor: auto;
+    padding-top: 10px;
+    margin: 5px;
+    list-style-type: none;
+    text-align: center;
+
 }
+
+#strategy h3 {
+  font-weight: lighter;
+
+}
+
+#strategy ul {
+  margin-left: -35px;
+}
+
+#com {
+
+/* display: block;
+    height: auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: 100px;
+    padding: 30px 40px 50px;
+    float: none; */
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 0.5px solid #000;
+    border-radius: 40px;
+    text-align: left;
+    cursor: auto;
+    padding-top: 10px;
+    margin: 5px;
+    list-style-type: none;
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+#com h3 mark {
+  background-color: #f2bf27;
+  font-size: 18px;
+
+}
+
+#com ul {
+  margin-left: -35px;
+  padding-top: 10px;
+}
+
+
 .founder {
   text-align: right;
   display: flex;
