@@ -298,11 +298,12 @@
           <button class="bouton">Book a meeting</button>
         </div>
 
+        <!-- CONTACT FORM JS V1-->
         <div class="col">
           <h3>Let's connect</h3>
           <p>Feel free to reach out to me for a collaboration or any questions, I would be happy to answer to you.</p>
           <form>
-            <div class="form-group">
+            <div action="mail.php" method="POST">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                 placeholder="Enter email">
@@ -312,6 +313,44 @@
             <button type="submit" class="bouton">SEND</button>
           </form>
         </div>
+
+
+        <form action="mail.php" method="POST">
+          <p>Name</p> <input type="text" name="name">
+          <p>Email</p> <input type="text" name="email">
+          <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+          <input type="submit" value="Send"><input type="reset" value="Clear">
+        </form>
+
+        <!-- CONTACT FORM JS -->
+        <!-- <form class="form-box" action="processform.php" method="post">
+          <label>Full name :</label>
+          <input type="text" name="senderName" id="senderName" required="required" maxlength="50" />
+          <label>Phone Number :</label>
+          <input type="text" name="phoneNumber" id="phoneNumber" required="required" maxlength="50" />
+          <label>Email address :</label>
+          <input type="email" name="senderEmail" id="senderEmail" required="required" maxlength="50" />
+          <label>Message :</label>
+          <textarea name="message" id="message" required="required"></textarea>
+          <input type="submit" id="sendMessage" name="sendMessage" class="cv-button primary" value="Send Message" />
+        </form> -->
+
+
+       <!-- CONTACT FORM SAUVEGARDE -->
+        <!--
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter your text">
+        <button type="submit" class="bouton">SEND</button>
+      </form>
+    </div> -->
+
+
       </div>
     </div>
           <div class="contact">
@@ -343,5 +382,12 @@
 
 
     </div>
+
+
+      <!-- MAIN JS FILES -->
+      <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui-custom.min.js"></script>
+      <script type="text/javascript" src="js/jquery.ascensor.min.js"></script>
+      <script type="text/javascript" src="js/nerveslider.min.js"></script>
   </body>
 </html>
