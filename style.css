@@ -585,7 +585,6 @@ display: contents;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .footer h3 {
@@ -619,12 +618,6 @@ display: contents;
   text-align: center;
 }
 
-/* .footer mark{
-  background-color: #f2bf27;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-} */
 .footer a {
   color: white;
   font-weight: bolder;
@@ -638,7 +631,7 @@ display: contents;
   font-weight: bolder;
 }
 
-/* BUTTON TEST */
+/* BUTTON */
 
 .bouton {
   font-family: 'Roboto', sans-serif;
@@ -740,10 +733,7 @@ button:hover::after {
   }
 }
 
-
-
 /* CONTACT FORM */
-
 
 input[type="text"],
 input[type="email"],
@@ -776,7 +766,6 @@ textarea
   font-style: italic;
   font-weight: lighter;
 }
-
 
 #quote {
   font-size: 20px;
