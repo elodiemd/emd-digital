@@ -25,7 +25,7 @@
   flex-direction: inline;
   justify-content: space-around;
   background-color: white;
-   color: black;
+  color: black;
   text-decoration: none;
 
 }
@@ -68,6 +68,13 @@
 
 }
 
+@media(max-width: 500px) {
+.menu ul {
+font-size: 12px;
+}
+}
+
+
 .main-container {
   margin-top: 200px;
 }
@@ -91,6 +98,18 @@ body h2 {
   color: black;
 }
 
+@media(max-width: 800px) {
+ body h2 {
+  font-size: 60px;
+}
+}
+@media(max-width: 500px) {
+#up H2{
+  display: none;
+}
+}
+
+
 h4 {
   color: #172601;
   font-size: 17px;
@@ -111,9 +130,6 @@ h4 {
 }
 
 
-.description {
-  text-align: justify;
-}
 /* SECTION BANNER */
 
 .banner {
@@ -141,6 +157,7 @@ h4 {
   font-size: 20px;
   color: #172601;
 }
+
 
 
 #green {
@@ -189,6 +206,15 @@ p a:hover {
 
 /* SECTION SERVICES */
 
+#down h2 {
+display: none;
+}
+
+@media(max-width: 575px) {
+ #down h2  {
+display: contents;
+ }
+}
 
 #strategy {
 
@@ -381,7 +407,17 @@ p a:hover {
   font-weight: lighter;
   margin-left: 70px;
   align-items: center;
+  text-align: justify;
 }
+
+@media(max-width: 575px) {
+ .description  {
+  margin: 5px;
+  width: auto;
+
+}
+}
+
 
 .signature {
   font-family: 'Mr De Haviland', cursive;
@@ -396,6 +432,12 @@ p a:hover {
 
 .photo-emd img {
   width: 180px;
+}
+
+@media(max-width: 575px) {
+.photo-emd {
+justify-content: center;
+}
 }
 
 .hashtag {
@@ -620,6 +662,9 @@ color: white;
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
 
 }
 
@@ -715,6 +760,39 @@ button:hover::after {
 /* CONTACT FORM */
 
 
+input[type="text"],
+input[type="email"],
+textarea
+{
+    background-color: #fff;
+    color: rgb(161, 137, 137);
+    width: 80%;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5; color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+
+.contact-form p {
+  padding-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+::placeholder {
+  color: rgb(177, 171, 171);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*
 @font-face {
     font-family: 'ralewaybold';
     src: url('../fonts/raleway-bold-webfont.eot');
@@ -726,11 +804,12 @@ button:hover::after {
     font-style: normal;
 }
 
-body {
+.contact-form body {
     background-color:#222;
     color:#FFF;
     font-family: 'ralewaybold';
 }
+
 .contact-form-container {
     margin-left:auto;
     margin-right:auto;
@@ -750,4 +829,9 @@ body {
 .contact-form-container p{
     font-size:20px;
 }
+} */
+
+#quote {
+  font-size: 20px;
+  padding: 10px;
 }

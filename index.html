@@ -31,8 +31,8 @@
             </div>
         </div>
 
-      <div class="banner"  id="about">
-        <div class="container">
+      <div class="banner">
+        <div class="container" id="about">
           <div class="row align-items-center">
             <!-- <div class="col-9">
               <h1>EMD <span class="highlight">Digital </span><em>Studio</h1>
@@ -45,17 +45,14 @@
       </div>
 
 
-
-
-
       <div class="container mt-5">
 
         <div class="row align-items-center">
-          <div class="col-3">
+          <div class="col-sm-3">
             <h2>About.</h2>
           </div>
 
-          <div class="col-6 description">
+          <div class="col-sm-6 description">
               <div class="row">
                 <p>EMD Digital Studio is the specialized to support brand to their digital transformation and digital optimization. Every client
                 receive a full personalized support. Working with EMD Digital Studio is the opportunity to have 360 global view of the
@@ -68,7 +65,7 @@
           </div>
 
 
-          <div class="col-2 photo-emd">
+          <div class="col-sm-2 photo-emd">
            <img src="images/emd-photo.png" alt="EMD">
           </div>
 
@@ -76,18 +73,21 @@
       </div>
 
       <div class="divider" id="services"></div>
+        <div class="col-sm-6" id="down">
+          <h2>Work <br>Together.</h2>
+        </div>
 
       <div class="container">
 
         <div class="row mt-4 align-items-center">
-          <div class="col-6">
+          <div class="col-sm-6">
             <div class="row">
               <div class="col-sm" id="strategy">
                 <h3><mark> DIGITAL STRATEGY</mark></h3>
                 <li>
-                  <ul>Launching Strategy </ul>
-                  <ul>Audit & Strategy Creation</ul>
-                  <ul>Corporate Branding</ul>
+                  <ul>Business Launch Strategy </ul>
+                  <ul>Marketing Audit & Strategy </ul>
+                  <ul>Digital Strategy Optimization</ul>
                   <ul>Digital Project Management</ul>
                 </li>
               </div>
@@ -96,7 +96,7 @@
                   <h3><mark>MARKETING & COMMUNICATION</mark></h3>
                   <li>
                     <ul>Marketing Optimization</ul>
-                    <ul>Brand Guidelines creation</ul>
+                    <ul>Corporate Branding</ul>
                     <ul>Social Media Content</ul>
                     <ul>Influencer strategy </ul>
                   </li>
@@ -106,9 +106,9 @@
                 <h3><mark>WEB DEVELOPMENT</mark></h3>
                 <li>
                   <ul>Statics Website</ul>
-                  <ul>Creation of MVP website</ul>
-                  <ul>Redesign Website (tech & branding)</ul>
-                  <ul>Website guideline brief & Wireframe </ul>
+                  <ul>E-commerce Website</ul>
+                  <ul>Creation of MVP Website</ul>
+                  <ul>Website Redesign</ul>
                 </li>
               </div>
 
@@ -124,7 +124,7 @@
             </div>
 
           </div>
-          <div class="col-6">
+          <div class="col-sm-6" id="up">
             <h2>Work <br>Together.</h2>
           </div>
         </div>
@@ -166,7 +166,7 @@
       </div>
 
 
-      <div class="divider"></div>
+      <div class="divider" id='portfolio'></div>
 
       <div class="container">
         <h2>Portfolio <br>& References </h2>
@@ -281,89 +281,47 @@
     </div>
 
 
-
-      <div class="divider"></div>
+    <div class="divider" id="contact"></div>
 
       <div class="container">
         <h2>The Studio<br>& you.</h2>
       </div>
     <div class="container mt-5 align-items-center">
-      <div class="row">
-        <div class="col">
+      <div class="row align-items-center">
+        <div class="col-sm">
           <p id=quote>
            <em> "Coming together is a beginning, keeping together is progress, working together is <strong>success</strong>."
           </em> - Henry Ford</p>
+          <br>
+          <br>
           <p>During my career I have worked with big & small companies, my freelance adventures follow this culture melting pot and In a year and an halffrom different countries (France, China, Dubai,..) most of them were regular client. because I have worked with big & small companies,
           </p>
-          <button class="bouton">Book a meeting</button>
+          <br>
+          <br>
+          <p>Feel free to reach out to me for a collaboration or any questions, I would be happy to answer to you. - contact@emdigitalstudio.com
+</p>
+
+          <div class="row justify-content-center"><button class="bouton">Book a meeting</button></div>
         </div>
 
         <!-- CONTACT FORM JS V1-->
-        <div class="col">
-          <h3>Let's connect</h3>
-          <p>Feel free to reach out to me for a collaboration or any questions, I would be happy to answer to you.</p>
-          <form>
-            <div action="mail.php" method="POST">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your text">
-            <button type="submit" class="bouton">SEND</button>
+        <div class="col-sm">
+          <h3>Let's connect get in touch</h3>
+          <form class="contact-form" action="contactform.php" method="POST">
+            <p>Name</p> <input type="text" name="name" placeholder="Full Name">
+            <p>Email Address</p> <input type="text" name="email" placeholder="Your Email">
+            <p>Subject</p> <input type="text" name="subject" placeholder="Subject">
+            <p>Message</p><textarea name="message" rows="6" cols="25" placeholder="How can I help you?"></textarea><br />
+            <div class="row justify-content-center"><button type="submit" name="submit">SEND </button></div>
           </form>
         </div>
 
-
-        <form action="mail.php" method="POST">
-          <p>Name</p> <input type="text" name="name">
-          <p>Email</p> <input type="text" name="email">
-          <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
-          <input type="submit" value="Send"><input type="reset" value="Clear">
-        </form>
-
-        <!-- CONTACT FORM JS -->
-        <!-- <form class="form-box" action="processform.php" method="post">
-          <label>Full name :</label>
-          <input type="text" name="senderName" id="senderName" required="required" maxlength="50" />
-          <label>Phone Number :</label>
-          <input type="text" name="phoneNumber" id="phoneNumber" required="required" maxlength="50" />
-          <label>Email address :</label>
-          <input type="email" name="senderEmail" id="senderEmail" required="required" maxlength="50" />
-          <label>Message :</label>
-          <textarea name="message" id="message" required="required"></textarea>
-          <input type="submit" id="sendMessage" name="sendMessage" class="cv-button primary" value="Send Message" />
-        </form> -->
-
-
-       <!-- CONTACT FORM SAUVEGARDE -->
-        <!--
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="Enter your text">
-        <button type="submit" class="bouton">SEND</button>
-      </form>
-    </div> -->
-
-
       </div>
     </div>
-          <div class="contact">
-          </div>
 
     <div class="divider"></div>
 
     <div class="footer align-items-center">
-      <!-- <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div> -->
       <div class="logo">
         <img src="images/logo-emd-min.png" alt="">
       </div>
@@ -374,7 +332,7 @@
             <a href="https://www.linkedin.com/in/elodiemarieduffau/" target="blank"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:emd-digitalstudio@gmail.com" target="blank"><i class="fas fa-envelope"></i></a>
           </div>
-            <p>Made by <a href="">EMD Digital Studio</a>- Copyright - All rights reserved</p>
+            <p>Coded by <a href="">EMD Digital Studio</a>- All rights reserved</p>
         </div>
       </div>
 
