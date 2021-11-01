@@ -681,6 +681,7 @@ button, button::after {
   box-shadow: 6px 0px 0px #f2bf27;
   outline: transparent;
   position: relative;
+  font-weight: lighter;
 }
 
 button::after {
