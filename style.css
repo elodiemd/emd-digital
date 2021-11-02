@@ -32,7 +32,7 @@
 }
 
 .menu a {
-   color: black;
+  color: black;
   text-decoration: none;
 
 }
@@ -51,20 +51,25 @@
 
 }
 
-.menu ul:hover {
+/* .menu ul:hover {
  font-weight: 500;
-  color: black;
+  /* color: black; */
+  /* color: #f2bf27;
   text-decoration: none;
-}
+} */
+
 
 .menu a:hover {
   color: #f2bf27;
   text-decoration: none;
+  font-weight: bold;
+
 }
 
 .menu ul {
   justify-content: center;
-   color: black;
+  /* color: black; */
+  color: #f2bf27;
   text-decoration: none;
 
 }
@@ -115,6 +120,16 @@ h4 {
   color: #172601;
   font-size: 17px;
 }
+
+.card-category h5 {
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 2px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
 
 .divider  {
    height: 150px;
@@ -511,8 +526,8 @@ display: contents;
   display: none;
   background-color: black;
   font-weight: lighter;
-  font-size: 10px;
-  padding: 5px;
+  font-size: 14px;
+  padding: 10px;
 
 }
 
@@ -529,7 +544,7 @@ display: contents;
   font-style: italic;
 }
 
-.card-category:hover h3 {
+.card-category:hover h5 {
   display: none;
 }
 
@@ -641,6 +656,8 @@ display: contents;
   font-size: 15px;
   margin-top: 30px;
   margin-bottom: 30px;
+  cursor: pointer;
+
 
 
 }
@@ -659,6 +676,8 @@ button, button::after {
   outline: transparent;
   position: relative;
   font-weight: lighter;
+  cursor: pointer;
+
 }
 
 button::after {
@@ -679,11 +698,14 @@ button::after {
   background: linear-gradient(45deg, transparent 3%, #566B3C 3%, #566B3C 5%, #F2BF27 5%);
   text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #566B3C;
   clip-path: var(--slice-0);
+  cursor: pointer;
+
 }
 
 button:hover::after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
+  cursor: pointer;
 }
 
 @keyframes glitch {
