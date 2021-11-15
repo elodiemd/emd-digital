@@ -519,9 +519,24 @@ display: contents;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
   box-shadow: 0 0 60px rgba(0,0,0,0.7);
   transform: scale(1.5);
-  margin: 5px;
+  /* margin: 5px; */
 }
 
+@media (max-width: 575px) {
+
+  .card-category:hover {
+    transform: scale(1.1);
+  }
+
+}
+
+@media (min-width: 575px) and (max-width: 780px) {
+
+  .card-category:hover {
+    transform: scale(1.2);
+  }
+
+}
 
 
 .card-category h6 {
@@ -547,6 +562,7 @@ display: contents;
   text-decoration: none;
   color: white;
   font-style: italic;
+  font-weight: bold;
 }
 
 .card-category:hover h5 {
@@ -768,9 +784,8 @@ textarea
 {
     background-color: #fff;
     color: rgb(161, 137, 137);
-    width: 80%;
-    display: block;
     width: 100%;
+    display: block;
     padding: 0.375rem 0.7rem;
     font-size: 1rem;
     line-height: 1.5; color: #495057;
